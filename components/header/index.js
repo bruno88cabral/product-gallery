@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import { galleries } from '../../constants';
 import Image from 'next/image';
+import { galleries } from '../../constants';
 
 import styles from './styles.scss';
 

@@ -15,8 +15,6 @@ const Gallery = () => {
 		fetcher
 	);
 
-	console.log(data);
-
 	return (
 		<>
 			<Head>
@@ -26,7 +24,7 @@ const Gallery = () => {
 
 			<Header />
 
-			<div className={styles.gallery}>
+			<section className={styles.gallery}>
 				{data && data.map(({ name, id, value }, i) => {
 					return (
 						<Card
@@ -38,7 +36,7 @@ const Gallery = () => {
 						/>
 					);
 				})}
-			</div>
+			</section>
 
 		</>
 	);

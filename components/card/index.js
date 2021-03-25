@@ -3,6 +3,7 @@ import PropTypes from 'proptypes';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './styles.scss';
+import { monetary } from '../../utils';
 
 const Card = ({
 	name,
@@ -24,7 +25,7 @@ const Card = ({
 						{ name }
 					</dt>
 					<dd>
-                        R$ { String(value).replace('.', ',') }
+                        R$ { monetary(value) }
 					</dd>
 				</dl>
 
