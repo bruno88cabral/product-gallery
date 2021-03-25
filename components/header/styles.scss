@@ -1,0 +1,23 @@
+@import '../../styles/globals.scss';
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+    
+    @include md {
+        max-width: 80%;
+		margin: 2rem auto 4rem;
+	}
+    
+    .content {
+        cursor: pointer;
+
+        @include md {
+            margin: 0 2rem;
+        }
+    }
+}

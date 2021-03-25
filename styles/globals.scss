@@ -1,0 +1,63 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+//screen variables
+$screen-sm-min: 576px;
+$screen-md-min: 790px;
+$screen-lg-min: 992px;
+$screen-xl-min: 1200px;
+
+// screen mixins
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+      @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+      @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+      @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+      @content;
+  }
+}
+
+
+.gallery {
+	@include sm {
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+	@include md {
+		grid-template-columns: 33.33% 33.33% 33.33%;
+		max-width: 80%;
+		margin: 0 auto;
+	}
+
+}
+
