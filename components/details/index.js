@@ -11,7 +11,7 @@ const Details = ({
 	about,
 	value
 }) => {
-	return (
+	return value ? (
 		<section className={styles.details}>
 			<div>
 				<h2> 
@@ -25,7 +25,7 @@ const Details = ({
 			</div>
 			<div>
 				<h3>
-					{ monetary(value) }
+					{  monetary(value) }
 				</h3>
 
 				<p>
@@ -33,7 +33,7 @@ const Details = ({
 				</p>
 			</div>
 		</section>
-	);
+	) : null;
 };
 
 Details.propTypes = {

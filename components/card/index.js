@@ -25,7 +25,7 @@ const Card = ({
 						{ name }
 					</dt>
 					<dd>
-                        R$ { monetary(value) }
+						{ monetary(value) }
 					</dd>
 				</dl>
 
